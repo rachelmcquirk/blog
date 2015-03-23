@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: #e4e9e5;
+	background: white;
   font: 18px/1.4 $helvetica;
-  color: #FF6666;
+  color: black;
 }
 
 .container {
@@ -32,11 +32,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: #00376E;
+  color: #FF6666;
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -266,9 +265,29 @@ nav {
   }
 
   .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+    border-radius: 0.3em;
+    border: 1px solid;
+    display: inline-block;
+    margin: 1em 0;
+    padding: 0.5em 0.75em;
   }
+
+  .read-more:hover {
+    background: #1ABC9C;
+    border:1px solid #1ABC9C;
+    color:#fff;
+    text-decoration:none
+  }
+
+  a{
+    color: #1ABC9C;
+    text-decoration: none;
+  }
+
+  h1 a {
+    color: #FF6666;
+  }
+
 }
 
 .wrapper-footer {
