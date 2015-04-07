@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dear Diary (Firebase)
+title: The Anti-diary
 ---
 I've taken my <a href="http://rachelmcquirk.com/projects/deardiaryfirebase" target="_blank">Dear Diary</a> project and made it so that it stores data using Firebase as a backend rather than storing it locally. It saves the data globally, so anytime anyone edits it, it shows the new text for everyone.
 
