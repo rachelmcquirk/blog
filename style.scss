@@ -18,8 +18,9 @@ html {
 }
 
 body {
-	background: white;
-  font: 18px/1.4 $helvetica;
+	background: rgba(248, 248, 248, 0.74);
+  font: 18px/1.4;
+  font-family: 'Open Sans', sans-serif;
   color: black;
   display: flex;
   min-height: 100vh;
@@ -35,7 +36,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   color: #FF6666;
   font-weight: bold;
 
@@ -153,9 +154,7 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
+
 
 .masthead {
   padding: 20px 0;
@@ -197,7 +196,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -216,7 +215,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 
   @include mobile {
@@ -277,15 +276,16 @@ nav {
   }
 
   .read-more:hover {
-    background: #1ABC9C;
-    border:1px solid #1ABC9C;
+    background: rgb(122, 216, 175);
+    border:1px solid rgb(122, 216, 175);
     color:#fff;
     text-decoration:none
   }
 
   a{
-    color: #1ABC9C;
+    color: rgb(122, 216, 175);
     text-decoration: none;
+    font-weight: bold;
   }
 
   h1 a {
@@ -294,19 +294,37 @@ nav {
 
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #555;
-}
-
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+//banner from main page
+#background-div2 {
+  background-color: rgba(118, 112, 112, 0.34);
+  height: 75px;
+  width: 100%;
+  display: inline-block;
+  margin-top: 138px;
+}
+
+#background-div2 h1 {
+  color: white;
+  margin-top: 10px;
+}
+
+#content {
+  margin: 0, 50px;
+  height: inherit;
+  width: 80%;
+  background-color: rgba(248, 248, 248, 0.74);
+  text-align: center;
+}
+
+#banner {
+  background-image: url('/images/background1.jpg');
+  height: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 45px;
+}
